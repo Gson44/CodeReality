@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#title {
+  font-family: "Luxurious Script", cursive;
+  font-weight: 100;
+  font-style:normal;
+  color: rgb(255, 219, 172);
+  font-size: 70px;  
+  
+}
+.item {
+    display: flex;
+    align-items: center;
+
+}
+li {
+    margin: 25px;
+}
+ul > li > a {
+    color:rgb(255, 222, 180);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul > li > a:hover {
+    color:rgb(255, 249, 241);
+   
+}
+
+#headerContent{
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#headerContent > h1 {
+  
+    margin-bottom: 20px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+
+
+#headerContent button {
+    font-size: 25px;
+    padding: 20px 30px;
+    background-color: #166E8B;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-family: "Sedan SC", serif;
+}
+#headerContent button:hover {
+   
+    background-color: #125970;
+   
+}
+#headerContent button:active {
+   
+    background-color: #1080a5;
+   
+}

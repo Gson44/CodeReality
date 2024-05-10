@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(47, 47, 47);
+}
+#header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#title {
+  font-family: "Luxurious Script", cursive;
+  font-weight: 100;
+  font-style:normal;
+  color: rgb(255, 219, 172);
+  font-size: 70px;  
+  
+}
+.item {
+    display: flex;
+    align-items: center;
+
+}
+li {
+    margin: 25px;
+}
+ul > li > a {
+    color:rgb(255, 222, 180);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul > li > a:hover {
+    color:rgb(255, 249, 241);
+   
+}
+
+
+/* Contact */
+#contact {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #125970;
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    top:200px;
+    box-shadow: black 25px 25px 15px;
+    text-align: center;
+}
+
+#contactHeader{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    background-color: black;
+    height: 40%;
+}
+
+form > label {
+    text-align: left;
+    font-size: 32px;
+    color: rgb(255, 222, 180);
+    font-family: "Sedan SC", serif;
+    position: relative;
+    font-weight: 100;
+}
+form > input {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+form > button {
+        font-size: 20px;
+        padding: 20px 30px;
+        background-color: rgb(255, 222, 180);;
+        border: none;
+        border-radius: 10px;
+        color:black;
+        font-family: "Sedan SC", serif;
+       
+    
+}
+
+form > button:hover {
+       
+    background-color: #125970;
+   
+}
+form > button:active {
+   
+    background-color: #1080a5;
+   
+}
+
+#contactTitle {
+    color: white;
+    font-family: "Sedan SC", serif;
+    position: relative;
+    
+    font-weight: 100;
+}
