@@ -1,50 +1,74 @@
+/* Elements */
 * {
     margin: 0px;
     padding: 0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-#header {
+    
+    font-family: "Cormorant Garamond", serif;
+    font-weight:lighter;
     background-color: black;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    color:rgb(255, 222, 180);
 }
-#title {
-  font-family: "Luxurious Script", cursive;
-  font-weight: 100;
-  font-style:normal;
-  color: rgb(255, 219, 172);
-  font-size: 70px;  
-  
+h1 {
+    font-size: 70px;
 }
-.item {
-    display: flex;
-    align-items: center;
 
+h2 {
+    font-size: 50px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+
 li {
     margin: 25px;
+    list-style: none;
 }
+nav > img {
+    height: 100px;
+}
+img {
+    height: 150px;
+}
+
 ul > li > a {
     color:rgb(255, 222, 180);
     text-decoration: none;
     font-size: 30px;
-    font-family: "Sedan SC", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-weight:lighter;    
 }
+
 ul > li > a:hover {
-    color:rgb(255, 249, 241);
-   
+    color:rgb(255, 249, 241);   
+}
+
+label {
+    color:white;
+}
+
+/* Header Section */
+#headerSection {
+    border-top: 1px solid rgb(255, 222, 180);
 }
 
 #headerContent{
-    background-image: url('header.jpg');
-    background-size: cover;
+    margin-top: 10px;
+    background-image: url('Logo.png');
+    background-size:contain;
     background-position: center;
     height: 90vh; /* Full height of the viewport */
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,35 +76,190 @@ ul > li > a:hover {
     text-align: center;
     color: white;
     padding: 20px;
+    background-color: black;
+    margin-top: 20px;
 }
 
-#headerContent > h1 {
-  
-    margin-bottom: 20px;
-    font-family: "Sedan SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 80px;
+/* Course Section */
+#course {
+    text-align: center;
+    padding:150px;
 }
 
-
-
-#headerContent button {
-    font-size: 25px;
-    padding: 20px 30px;
-    background-color: #166E8B;
+#course > button {
+    background-color: rgb(255, 222, 180);
+    color:black; 
     border: none;
-    border-radius: 10px;
-    color:white;
-    font-family: "Sedan SC", serif;
+    padding: 10px;
+    font-size: 32px;
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 25px;
+    box-shadow: rgb(70, 70, 70) 10px 10px 17px;
 }
-#headerContent button:hover {
-   
-    background-color: #125970;
-   
+#course > ul > li > img {
+    height: 300px;
+    width: 300px;
 }
-#headerContent button:active {
-   
-    background-color: #1080a5;
-   
+#course > ul > li > h2 {
+    font-size: 62px;
 }
+
+#course > button:hover {
+    background-color: rgb(219, 185, 140);
+}
+ p {
+    font-size: 42px;
+    margin-top: 25px;
+}
+
+#course > ul {
+    display: flex;
+}
+#course > p {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* Price */
+#price {
+    text-align: center; 
+}
+#price > ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+#price > p {
+    margin-top: 170px;
+}
+#price > h2 {
+    margin-top: 132px;
+}
+
+#price > ul > li{
+    font-size: 40px;
+}
+/* Classes */
+.item {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Empty Nav */
+#emptyNav {
+    height: 100px;
+}
+/* Section */
+#about {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;   
+    border-top:1px solid rgb(255, 222, 180);
+    border-bottom: 1px solid rgb(255, 222, 180);
+}
+#about > p {
+    width: 30%;
+    margin: auto;
+    font-size:26px;
+    font-weight: 100;
+    margin: 0px 100px;
+}
+
+.half {
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    background-color: rgb(255, 222, 180);
+    width: 50%;
+    padding:40px;
+    font-size: 100px;
+    align-items: center;
+    color: rgb(59, 59, 59);
+    font-family: "Luxurious Script", cursive;
+    font-weight: 100;
+    font-style: italic;
+    
+}
+
+.righ-side {
+    width: 50%;
+    
+}
+
+
+/* Mobile Content */
+/* Base styles */
+/* Base styles */
+/* Base styles */
+html, body {
+    font-size: 16px; /* Base font size */
+}
+
+/* General styles for mobile */
+@media (max-width: 768px) {
+    /* Hide the navigation bar on mobile devices */
+    nav {
+        display: none;
+    }
+
+    h1, h2 {
+        font-size: 28px; /* Reduce the size for headers on mobile */
+        margin: 20px 0; /* Added top and bottom margin */
+    }
+    p, li {
+        font-size: 14px; /* Smaller font size for paragraphs and list items */
+        line-height: 1.6; /* Improved line height for better readability */
+        margin: 10px 0; /* Added top and bottom margin */
+    }
+
+    /* Adjust image sizes for mobile view */
+    #course > ul > li > img {
+        height: 180px; /* Smaller images */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    /* Stack list items vertically in the course and price sections */
+    #course > ul, #price > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust section layout for smaller screens */
+    #about, #course > ul {
+        flex-direction: column;
+    }
+
+    #about > .half, .left-side, .right-side {
+        width: 80%; /* Full width */
+        
+        text-align: left; /* Center text for readability */
+        font-size: 18px; /* Adjusted font size for large text blocks */
+    }
+
+    /* Correct alignment issues */
+    .right-side {
+       position: relative;
+       right: 45px;
+    }
+
+    #course {
+        padding: 50px 20px; /* Reduced padding and added side padding for content not to touch the edges */
+    }
+
+    #headerContent {
+        background-size: cover; /* Cover the entire header section */
+        height: 50vh; /* Smaller height for the header */
+    }
+
+    /* Ensure body content does not touch the edges */
+    body {
+        padding: 0 20px; /* Add padding to the sides */
+    }
+}
+
