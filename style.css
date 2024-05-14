@@ -3,33 +3,33 @@
     margin: 0px;
     padding: 0px;
 }
+:root {
+    --custom-color: rgb(247, 140, 0);
+  }
 html {
     scroll-behavior: smooth;
 }
 body {
-    
     font-family: "Cormorant Garamond", serif;
     font-weight:lighter;
-    background-color: black;
-    color:rgb(255, 222, 180);
+    background-color: white;
+    color: var(--custom-color);
+    text-align: center;
 }
 h1 {
     font-size: 70px;
 }
-
 h2 {
     font-size: 50px;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     position: fixed;
     width: 100%;
     overflow: hidden;
+    background-color: rgb(255, 222, 180);   
 }
-
-
 li {
     margin: 25px;
     list-style: none;
@@ -40,15 +40,13 @@ nav > img {
 img {
     height: 150px;
 }
-
 ul > li > a {
-    color:rgb(255, 222, 180);
+    color:rgb(180, 152, 116);
     text-decoration: none;
     font-size: 30px;
     font-family: "Cormorant Garamond", serif;
     font-weight:lighter;    
 }
-
 ul > li > a:hover {
     color:rgb(255, 249, 241);   
 }
@@ -56,6 +54,21 @@ ul > li > a:hover {
 label {
     color:white;
 }
+/* End Elements */
+
+/* Classes */
+.item {
+    display: flex;
+    align-items: center;
+
+}
+/* End Classes */
+
+/* Empty Nav */
+#emptyNav {
+    height: 100px;
+}
+/* End Empty */
 
 /* Header Section */
 #headerSection {
@@ -76,82 +89,12 @@ label {
     text-align: center;
     color: white;
     padding: 20px;
-    background-color: black;
+    background-color: white;
     margin-top: 20px;
 }
+/* End Header */
 
-/* Course Section */
-#course {
-    text-align: center;
-    padding:150px;
-}
-
-#course > button {
-    background-color: rgb(255, 222, 180);
-    color:black; 
-    border: none;
-    padding: 10px;
-    font-size: 32px;
-    font-family: "Cormorant Garamond", serif;
-    margin-top: 25px;
-    box-shadow: rgb(70, 70, 70) 10px 10px 17px;
-}
-#course > ul > li > img {
-    height: 300px;
-    width: 300px;
-}
-#course > ul > li > h2 {
-    font-size: 62px;
-}
-
-#course > button:hover {
-    background-color: rgb(219, 185, 140);
-}
- p {
-    font-size: 42px;
-    margin-top: 25px;
-}
-
-#course > ul {
-    display: flex;
-}
-#course > p {
-    margin-top: 20px;
-    font-size: 32px;
-}
-
-/* Price */
-#price {
-    text-align: center; 
-}
-#price > ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-
-}
-#price > p {
-    margin-top: 170px;
-}
-#price > h2 {
-    margin-top: 132px;
-}
-
-#price > ul > li{
-    font-size: 40px;
-}
-/* Classes */
-.item {
-    display: flex;
-    align-items: center;
-
-}
-
-/* Empty Nav */
-#emptyNav {
-    height: 100px;
-}
-/* Section */
+/* About Section */
 #about {
     display: flex;
     justify-content: space-between;
@@ -159,6 +102,7 @@ label {
     border-top:1px solid rgb(255, 222, 180);
     border-bottom: 1px solid rgb(255, 222, 180);
 }
+
 #about > p {
     width: 30%;
     margin: auto;
@@ -180,22 +124,97 @@ label {
     padding:40px;
     font-size: 100px;
     align-items: center;
-    color: rgb(59, 59, 59);
+    color: rgb(129, 85, 27);
     font-family: "Luxurious Script", cursive;
     font-weight: 100;
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 .righ-side {
     width: 50%;
-    
 }
+/* End About Section*/
+
+/* Course Section */
+#course {
+    text-align: center;
+    padding:150px;
+}
+
+#course > button {
+    background-color: rgb(255, 222, 180);
+    color:rgb(129, 85, 27);
+    border: none;
+    padding: 10px;
+    font-size: 32px;
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 25px;
+    box-shadow: rgb(241, 181, 102) 5px 5px 15px;
+}
+
+#course > ul > li > img {
+    height: 300px;
+    width: 300px;
+}
+
+#course > ul > li > h2 {
+    font-size: 62px;
+}
+
+#course > button:hover {
+    background-color: rgb(219, 185, 140);
+}
+
+ p {
+    font-size: 42px;
+    margin-top: 25px;
+}
+
+#course > ul {
+    display: flex;
+}
+
+#course > p {
+    margin-top: 20px;
+    font-size: 32px;
+}
+/* End Course Section */
+
+/* Price */
+#price {
+    text-align: center; 
+    background-color: rgb(255, 222, 180);
+    color:rgb(129, 85, 27);
+    padding:150px;
+}
+
+#price > ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#price > p {
+    margin-top: 100px;
+}
+
+#price > h2 {
+    margin-top: 100px;
+}
+
+#price > ul > li{
+    font-size: 40px;
+}
+/* End Price Section */
+
+/* Contact */
+#contactTitle {
+    margin-top: 25px;
+}
+/* End Contact Section */
 
 
 /* Mobile Content */
-/* Base styles */
-/* Base styles */
 /* Base styles */
 html, body {
     font-size: 16px; /* Base font size */
